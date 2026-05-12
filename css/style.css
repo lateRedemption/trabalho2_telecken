@@ -1,79 +1,103 @@
 * {
   margin: 0;
-  background-color: #f9eac3;
-}
-
-img {
-    width: 100px;
-    height: 100px;
+  color: #003049;
+  font-family: "Oswald", sans-serif;
+  font-size: 3vw;
 }
 
 header {
     display: flex;
-    position: sticky;
-    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    background-color: #669BBC;
+    position: sticky;
+    top: 0;
+}
+
+body {
+    background-color: #fdf0d5;
+}
+
+img, .espaco {
+    width: 8vw; 
+    background-color: #669BBC;
 }
 
 h1 {
-    flex: 1;
     text-align: center;
+    background-color: #669BBC;
+    font-size: 4vw;
 }
 
 h2 {
     text-align: center;
-    font-size: 64px;
+    font-size: 6vw;
 }
 
 p {
-    font-size: 42px;
+    font-size: 3vw;
 }
 
+/* MENU */
 .menu {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  align-content: center;
-  row-gap: 10px;
-  column-gap: 30px;
-  
-  padding: 16px;
-  height: 200px;
+  padding: 2vw;
+  gap: 2vw;
+}
+
+a {
+  text-decoration: none;
 }
 
 .menu a:hover {
-
-  color: aqua;
-
+  color: #669BBC;
 }
 
+/* BLOCO MENU */
 .bloco-1, .bloco-2, .bloco-3, .bloco-4 {
-    height: 150px;
-    width: 25%;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 16px;
+    height: 15vw;        
+    width: 22vw;         
+    text-align: center;      
+    border-radius: 1vw;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    font-family: "Roboto", sans-serif;
+    background-color: #C1121F;
 }
 
-.bloco-1 {
-  background-color: #c6d8f0;
+/* RESUMOS */
+.resumos {
+    background-color: #669BBC;
+    width: 80vw;
+    margin: 4vw auto;
+    padding: 4vw;
+    border-radius: 4vw;
+    text-align: center;
 }
 
-.bloco-2 {
-  /* indiferente: */
-  background-color: #d8bfd8;
+.resumos figure {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;       
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 2vw;
+  padding: 2vw;
+  border: 1vw #C1121F groove;
 }
 
-.bloco-3 {
-  /* indiferente: */
-  background-color: #ff9999;
+
+
+.resumos img {
+  width: 20vw;           
+  border: 0.2vw solid black;
 }
-.bloco-4 {
-    background-color: aliceblue;
+
+footer {
+  text-align: center;
 }
